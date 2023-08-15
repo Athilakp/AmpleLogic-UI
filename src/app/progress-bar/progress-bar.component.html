@@ -1,0 +1,21 @@
+<div class="toggle-button" (click)="toggleToolbar()">
+    <div class="toggle-icon">
+        <i *ngIf="!toolbarHidden" class="fas fa-angle-down"></i>
+        <i *ngIf="toolbarHidden" class="fas fa-angle-up"></i>
+    </div>
+</div>
+
+<mat-toolbar class="progress-toolbar" [hidden]="toolbarHidden">
+    <div class="toolbar-content">
+        <div class="rocket-icon">
+            <i class="fas fa-rocket"></i>
+        </div>
+        <div class="toolbar-text">Migrating Data to selected environment</div>
+        <div class="percentage">{{ progressValue }}%</div>
+    </div>
+    <div class="progress-container">
+        <div class="progress">
+            <div class="progress__fill" [style.width]="progressValue + '%'"></div>
+        </div>
+    </div>
+</mat-toolbar>

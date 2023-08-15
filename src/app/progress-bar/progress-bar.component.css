@@ -1,0 +1,108 @@
+.toggle-button {
+  position: absolute;
+  bottom: 50px;
+  right: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.toggle-button i {
+  font-size: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.toggle-icon {
+  background-color: #007BFF;
+  width: 56px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  border-radius: 6px;
+  transition: bottom 0.3s, transform 0.3s;
+}
+
+.toggle-icon i {
+  transform: rotate(0deg);
+}
+
+
+.toolbar-hidden .toggle-icon i {
+  transform: rotate(180deg);
+}
+
+
+.progress-toolbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.rocket-icon {
+  background-color: #288af3;
+  border-radius: 5px 0 0 5px;
+  padding: 0;
+  width: 5%;
+  height: 300%;
+  color: white;
+}
+
+.rocket-icon i {
+  position: absolute;
+  top: 25px;
+  left: 50px;
+}
+
+.toolbar-text {
+  font-size: 14px;
+  position: relative;
+  margin-left: 0;
+  padding-left: 80px;
+}
+
+.toolbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.percentage {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.progress-container {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.progress {
+  width: 95%;
+  height: 10px;
+  background: #d5dcdb;
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 80px;
+}
+
+.progress__fill {
+  height: 100%;
+  background: #288af3;
+  transition: width 0.2s;
+}
