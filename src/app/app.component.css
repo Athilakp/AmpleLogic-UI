@@ -1,12 +1,6 @@
-.name {
-    font-weight: bold;
-    font-size: 30px;
+.logo{
+    width: 160px;
 }
-
-.logic {
-    font-weight: 200;
-}
-
 .dropdown-icon {
     background-color: #288af3;
     font-size: 15px;
@@ -130,23 +124,10 @@
 .companyName {
     display: flex;
     align-items: center;
+    
 }
-
-.cm-name {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.cm-logic {
-    font-weight: 200;
-}
-
-.companyName .name {
-    margin-right: 5px;
-}
-
-.companyName .logic {
-    font-weight: bold;
+.logo-bottom{
+    width: 100px;
 }
 
 .bottom-bar .copyright {
